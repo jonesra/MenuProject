@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jonesra.menuproject.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:id="@+id/btnSMS"
+        android:layout_gravity="center|left"
+        android:onClick="btnSMSClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnShare"
+        android:layout_alignEnd="@+id/btnShare" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE"
+        android:id="@+id/btnPhone"
+        android:layout_below="@+id/btnSMS"
+        android:layout_alignLeft="@+id/btnSMS"
+        android:layout_alignStart="@+id/btnSMS"
+        android:layout_gravity="center|left"
+        android:onClick="btnPhoneClick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEB"
+        android:id="@+id/btnWeb"
+        android:layout_below="@+id/btnPhone"
+        android:layout_gravity="center|left"
+        android:layout_alignLeft="@+id/btnPhone"
+        android:layout_alignStart="@+id/btnPhone"
+        android:onClick="btnWebClick"
+        android:layout_alignRight="@+id/btnPhone"
+        android:layout_alignEnd="@+id/btnPhone" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAP"
+        android:id="@+id/btnMaps"
+        android:layout_gravity="center|left"
+        android:layout_below="@+id/btnWeb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="btnMapsClick"
+        android:layout_alignRight="@+id/btnPhone"
+        android:layout_alignEnd="@+id/btnPhone" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARE"
+        android:id="@+id/btnShare"
+        android:layout_gravity="center|left"
+        android:layout_below="@+id/btnMaps"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="btnShareClick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW ACTIVITY"
+        android:id="@+id/btnNewActivity"
+        android:layout_below="@+id/btnShare"
+        android:layout_alignLeft="@+id/btnShare"
+        android:layout_alignStart="@+id/btnShare"
+        android:onClick="btnNewActivityClick"
+        />
+
+</RelativeLayout>
